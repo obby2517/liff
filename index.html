@@ -55,7 +55,7 @@ window.onload = function() {
   initializeLiff('1654370606-geWqlVLk');
 }
 
-const xurl = "https://script.google.com/macros/s/AKfycbz-krIX4x26C_hIFECOy5i0EvLPIMIeKiSPD4kswFJXznuGFE4/exec";
+const xurl = "https://script.google.com/macros/s/AKfycbzrbR40z_AWbzEDRAty9EqZUx9NgjRTVnPP3u7IvZcw2F6KkKYI/exec";
 
 function checks(){
 
@@ -64,12 +64,12 @@ today.toLocaleString('th-TH', { timeZone: 'Asia/Bangkok' })
 var hh = today.getHours();
 var mm = today.getMinutes(); 
 
-        if(hh <= 13){
+        if(hh <= 14){
           document.getElementById("cin").classList.remove('invisible');
-        }else if(hh >= 17){
+        }else if(hh >= 16){
           document.getElementById("cout").classList.remove('invisible');
             }else{
-alert("ไม่สามารถเช็คอิน/เอาท์ได้ในช่วงเวลา 13.00-17.00 "+hh+":"+mm);
+alert("ไม่สามารถเช็คอิน/เอาท์ได้ในช่วงเวลา 14.00-16.00 "+hh+":"+mm);
 liff.closeWindow();  
             }
 }
